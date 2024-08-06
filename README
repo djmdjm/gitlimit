@@ -1,6 +1,6 @@
 Simple program to limit access to git repositories for SSH git clients
 run from authorized_keys. E.g.
 
-command="/usr/local/bin/gitlimit /git/scripts.git" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICMvIKQRTt6jgfzrhStlR0kNidaKRBkT4deA21P/zAao djm@semitrusted
+restrict,command="/usr/local/bin/gitlimit /git/scripts.git" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICMvIKQRTt6jgfzrhStlR0kNidaKRBkT4deA21P/zAao djm@semitrusted
 
 TODO: proper dequoting of repository (harmless because it's a strict allowlist)
